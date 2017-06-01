@@ -59,7 +59,7 @@ and then we can render our React element from earlier.
 ```js
 ReactDOM.render(
   title,
-  document.getElementById('main')
+  document.getElementById('root')
 );
 ```
 
@@ -94,7 +94,7 @@ const container = React.createElement('div', {}, title);
 
 ReactDOM.render(
   container,
-  document.getElementById('main')
+  document.getElementById('root')
 );
 ```
 
