@@ -15,6 +15,8 @@ In this lesson, we'll call `React.createElement()` and also describe how we can 
 
 Before we start working on this, let's go through some procedural setup to get React running on your system. React has a cli tool called Create React App that allow you to bootstrap React project quickly. We will also install Webpack for the hot reload. Lets install these packages globally so that we have the necessary dependencies on our machine for the lessons and labs in the this section. 
 
+Install [Node.js](https://nodejs.org/en/) 
+
 ```
 $ npm install -g create-react-app webpack
 ```
@@ -71,7 +73,7 @@ and then we can render our React element from earlier.
 ```js
 ReactDOM.render(
   title,
-  document.getElementById('main')
+  document.getElementById('root')
 );
 ```
 
@@ -106,7 +108,7 @@ const container = React.createElement('div', {}, title);
 
 ReactDOM.render(
   container,
-  document.getElementById('main')
+  document.getElementById('root')
 );
 ```
 
